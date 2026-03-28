@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# MkDocs
+site/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+
+# React Native Bridge
+node_modules/
+.expo/

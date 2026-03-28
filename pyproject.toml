@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "agentic-notify"
+version = "0.1.0"
+description = "A Python library for building agentic, notification-driven workflows with pluggable adapters, policy-aware handlers, and scalable integration interfaces."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "agentic_notify"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.0"
+ruff = "^0.3.0"
+black = "^24.2.0"
+mypy = "^1.8.0"
+
+[tool.poetry.extras]
+fastapi = ["fastapi", "uvicorn"]
+redis = ["redis"]
+mcp = ["mcp"] # Assuming standard mcp sdk
+observability = ["opentelemetry-api", "opentelemetry-sdk"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
