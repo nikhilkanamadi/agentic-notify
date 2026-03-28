@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "agentic-notify"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python library for building agentic, notification-driven workflows with pluggable adapters, policy-aware handlers, and scalable integration interfaces."
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
